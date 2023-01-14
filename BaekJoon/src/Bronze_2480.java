@@ -24,6 +24,6 @@ public class Bronze_2480 {
 				System.out.println(c * 100);
 			}
 		} 
-	}  
+	}   
 
 }
