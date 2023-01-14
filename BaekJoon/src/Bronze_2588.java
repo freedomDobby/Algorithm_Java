@@ -16,4 +16,4 @@ public class Bronze_2588 {
 	}
 
 }
- 
+  
