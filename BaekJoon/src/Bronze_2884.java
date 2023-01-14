@@ -19,6 +19,6 @@ public class Bronze_2884 {
 			System.out.println(h + " " + m);
 
 		}
-	}
+	} 
 
 }

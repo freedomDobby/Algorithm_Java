@@ -4,6 +4,6 @@ public class Bronze_10171 {
 		System.out.println("\\    /\\");
 		System.out.println(" )  ( ')");
 		System.out.println("(  /  )");
-		System.out.println(" \\(__)|");
+		System.out.println(" \\(__)|"); 
 	}
 }

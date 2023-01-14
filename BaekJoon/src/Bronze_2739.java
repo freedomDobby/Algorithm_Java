@@ -6,3 +6,4 @@ public class Bronze_2739 {
 		int num1 = sc.nextInt();
 	}
 }
+ 

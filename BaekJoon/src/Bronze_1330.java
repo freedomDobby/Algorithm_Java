@@ -15,5 +15,5 @@ public class Bronze_1330 {
 		} else {
 			System.out.println("==");
 		}
-	}
-}
+	} 
+} 

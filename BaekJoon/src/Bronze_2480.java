@@ -23,7 +23,7 @@ public class Bronze_2480 {
 			} else {
 				System.out.println(c * 100);
 			}
-		}
+		} 
 	}
 
 }

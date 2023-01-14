@@ -26,6 +26,6 @@ public class Bronze_2525 {
 			m = m + c;
 			System.out.println(h + " " + m);
 		}
-	}
+	} 
 
 }

@@ -21,5 +21,5 @@ public class Bronze_9498 {
 			System.out.println("F");
 		}
 	}
-
+ 
 }
