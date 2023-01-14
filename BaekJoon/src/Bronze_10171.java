@@ -7,4 +7,4 @@ public class Bronze_10171 {
 		System.out.println(" \\(__)|"); 
 	}
 }
- 
+  

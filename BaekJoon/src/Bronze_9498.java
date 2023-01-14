@@ -22,4 +22,4 @@ public class Bronze_9498 {
 		}
 	}
   
-}  
+}   

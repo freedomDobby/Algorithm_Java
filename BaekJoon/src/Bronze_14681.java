@@ -17,4 +17,4 @@ public class Bronze_14681 {
 		}
 	}
 }
-  
+   
