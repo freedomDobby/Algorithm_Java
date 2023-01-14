@@ -5,7 +5,6 @@ public class Bronze_2588 {
 		Scanner sc = new Scanner(System.in);
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
-		
 		int num3 = num2 % 100;
 		int num4 = num3 % 10;
 		
