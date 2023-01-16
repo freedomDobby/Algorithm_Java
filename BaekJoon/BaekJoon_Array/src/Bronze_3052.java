@@ -7,21 +7,25 @@ public class Bronze_3052 {
 
 		int arr[] = new int[10];
 		int count = 0;
+		boolean truth = true;
 
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt() % 42;
 		}
-		System.out.println(Arrays.toString(arr));
+//		System.out.println(Arrays.toString(arr));
 
-		for (int i = 0; i < arr.length ; i++) {
-			for (int k = 1; k < 10; k++) {
-				System.out.printf("i(%d) : %d  k(%d) : %d\n",i,arr[i],k,arr[k]);
-				if (arr[i] == arr[k]) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int k = 0; k < arr.length; k++) {
+
+				if (i == k || arr[i] != arr[k]) {
+					truth = false;
 					count++;
+//					System.out.printf("i(%d) : %d k(%d) : %d\n", i, arr[i], k, arr[k]);
 				}
-			}
-		}
 
-		System.out.println(count);
+			}
+		} 
+		int answer = count / 10;
+		System.out.println(answer);
 	}
 }
