@@ -4,7 +4,6 @@ public class Solution {
 	static int n; //전체 재료 갯수
 	static int l; //칼로리
 	static int[] score;
-	static boolean[] sel;
 	static int[] kal;
 	static int max_happy;
 
@@ -17,7 +16,6 @@ public class Solution {
 			l = sc.nextInt();
 
 			score = new int[n];
-			sel = new boolean[n];
 			kal = new int[n];
 
 			for (int i = 0; i < n; i++) {
@@ -43,10 +41,8 @@ public class Solution {
 		}
 
 		// 재료 선택 O
-		sel[idx] = true;
 		com(idx + 1, sum_s + score[idx], sum_k + kal[idx]);
 		// 재료 선택 X
-		sel[idx] = false;
 		com(idx + 1, sum_s, sum_k);
 
 	}
