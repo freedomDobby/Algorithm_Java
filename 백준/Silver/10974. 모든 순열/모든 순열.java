@@ -26,8 +26,6 @@ public class Main {
 	}
 
 	private static void pow(int idx, int sidx) {
-		// System.out.println(Arrays.toString(sel));
-
 		if (sidx == n) {
 			for (int i = 1; i <= n; i++) {
 				System.out.print(sel[i] + " ");
@@ -40,9 +38,9 @@ public class Main {
 				visited[i] = true;
 				sel[idx] = arr[i];
 				pow(idx + 1, sidx + 1);
-//				pow(idx + 1, sidx);
 				visited[i] = false;
 			}
 		}
+
 	}
 }
