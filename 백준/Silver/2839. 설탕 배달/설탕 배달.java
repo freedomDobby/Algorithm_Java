@@ -1,32 +1,28 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-		int kg = sc.nextInt();
-
-		int cnt = 0;
-
-		while (true) {
-			if (kg % 5 == 0) {
-				cnt += kg / 5;
-				kg = kg - (kg / 5);
-				System.out.println(cnt);
-				//System.out.printf("#/5 %d\n",kg);
-				break;
-			} else {
-				kg -= 3;
-				cnt++;
-				//System.out.printf("#/3 %d\n",kg);
-			}
-
-			if (kg < 0) {
+		int n = sc.nextInt();
+		if (n < 5) {
+			if (n == 3)
+				System.out.println(1);
+			else
 				System.out.println(-1);
-				break;
-			}
+			return;
 		}
+		int[] dp = new int[n + 1];
+		Arrays.fill(dp, 9999);
+		dp[3] = 1;
+		dp[5] = 1;
 
+		for (int i = 6; i < dp.length; i++) {
+			dp[i] = Math.min(dp[i - 3] + 1, dp[i - 5] + 1);
+		}
+		if (dp[n] > 9999)
+			System.out.println(-1);
+		else
+			System.out.println(dp[n]);
 	}
-
 }
